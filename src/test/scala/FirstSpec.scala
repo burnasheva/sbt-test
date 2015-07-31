@@ -11,6 +11,6 @@ class ExampleSpec extends FlatSpec {
 
   it must "subtract correctly" in {
     val diff = 4 - 1
-    assert(diff === 3)
+    assert(diff === 4)
   }
 }
