@@ -13,4 +13,9 @@ class ExampleSpec2 extends FlatSpec {
     val diff = 4 - 1
     assert(diff === 3)
   }
+
+  it must "multiply correctly" in {
+    val diff = 4 * 1
+    assert(diff === 4)
+  }
 }
