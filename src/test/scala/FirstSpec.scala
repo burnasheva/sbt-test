@@ -2,7 +2,6 @@ import org.scalatest.FlatSpec
 import org.scalatest._
 import Matchers._
 
-@Ignore 
 class ExampleSpec extends FlatSpec {
 
     "The Scala language" must "add correctly" in {
