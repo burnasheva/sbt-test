@@ -2,7 +2,7 @@ import org.scalatest.FlatSpec
 import org.scalatest._
 import Matchers._
 
-class ExampleSpec extends FlatSpec {
+class ExampleSpec abc extends FlatSpec {
 
   "The Scala language" must "add correctly" in {
       val sum = 1 + 1
