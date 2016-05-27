@@ -1,6 +1,7 @@
 import org.scalatest.FlatSpec
 import org.scalatest._
 import Matchers._
+import grizzled.slf4j.Logger
 
 class Abcdef extends FlatSpec {
 
@@ -11,7 +12,12 @@ class Abcdef extends FlatSpec {
 
       Console.setOut(Console.err)
       println("Goodbye, World")
+
+      val logger = Logger(classOf[Abcdef])
+      logger.error("some error")
+
       assert(sum === 2)
+
     }
 
   it must "subtract correctly" in {
