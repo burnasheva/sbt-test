@@ -7,6 +7,10 @@ class Abcdef extends FlatSpec {
     "The Scala language" must "add correctly" in {
       val sum = 1 + 1
       System.err.println("Error msg")
+      Console.err.println("Goodbye, World!")
+
+      Console.setOut(Console.err)
+      println("Goodbye, World")
       assert(sum === 2)
     }
 
